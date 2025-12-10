@@ -90,8 +90,17 @@ def create_order_file(user_df):
 # 4. Streamlit UI
 # ======================================================================
 st.set_page_config(page_title="Plazma Order System", layout="wide")
-st.title("ABBA Optical RX Order App")
-st.caption("Fill out the forms and export to Excel when done.")
+
+# 타이틀과 이미지를 위한 두 개의 열 생성
+col1, col2 = st.columns([0.7, 0.3]) # 70%는 텍스트, 30%는 이미지 공간 할당
+
+with col1:
+    st.title("ABBA Optical RX Order App")
+    st.caption("Fill out the forms and export to Excel when done. Please note that ft28 only available in materials in the table")
+
+with col2:
+    # use_column_width=True를 사용하여 열 너비에 맞춰 크기 조정
+    st.image('ft28.png', caption='ft28')
 
 opts = load_options()
 if not opts:
@@ -115,7 +124,7 @@ edited_df = st.data_editor(
     st.session_state.df_input,
     column_config=col_conf,
     num_rows="fixed",
-    hide_index=True,
+    hide_index=False,
     height=600,
     use_container_width=True
 )
