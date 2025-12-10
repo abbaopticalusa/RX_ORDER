@@ -48,7 +48,7 @@ ALL_COLUMNS = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','
 DROPDOWN_COLS = ['J','K','L','M']
 
 USER_HEADERS = [
-    'Order #', 'Eye', 'Sph', 'Cyl', 'Axis', 'Prism 1', 'Add', 'PD', 'HT',
+    'Order #', 'Eye(R/L)', 'Sph', 'Cyl', 'Axis', 'Prism 1', 'Add', 'PD', 'HT',
     'MATERIAL', 'Products', 'tint', 'Coating', 'NOTE','A', 'B', 'ED', 'DBL', 'Qty'
 ]
 HEADER_MAPPING = {f'Col_{ALL_COLUMNS[i]}': USER_HEADERS[i] for i in range(len(ALL_COLUMNS))}
