@@ -96,16 +96,11 @@ col1, col2 = st.columns([0.7, 0.3]) # 70%는 텍스트, 30%는 이미지 공간 
 
 with col1:
     st.title("ABBA Optical RX Order App")
-    st.caption("1. Fill out each line as needed. Per eye (R and L).
-2. Fill out the form and export to Excel when finished.
-3. Email the Excel file to order@abbaopticalusa.com.
-
-*Use the "Notes" colum for any special requests (e.g., Mirror Tint, Base Curve, etc.)
-*Note that FT28 is only available in the materials listed in the table to the right.")
+    st.caption("1. Fill out each line as needed. Per eye (R and L). \n\n 2. Fill out the form and export to Excel when finished. \n\n 3. Email the Excel file to order@abbaopticalusa.com. \n\n *Use the "Notes" colum for any special requests (e.g., Mirror Tint, Base Curve, etc.) \n\n *Note that FT28 is only available in the materials listed in the table to the right.")
 
 with col2:
     # use_column_width=True를 사용하여 열 너비에 맞춰 크기 조정
-    st.image('ft28.png', caption='ft28')
+    st.image('ft28.png', caption='FT28')
 
 opts = load_options()
 if not opts:
