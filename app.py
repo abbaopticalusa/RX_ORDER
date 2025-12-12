@@ -48,7 +48,7 @@ ALL_COLUMNS = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','
 DROPDOWN_COLS = ['J','K','L','M']
 
 USER_HEADERS = [
-    'Order #', 'Eye (R/L)', 'Sph', 'Cyl', 'Axis', 'Prism', 'Add', 'PD', 'HT',
+    'Patient Name/Order#', 'Eye (R/L)', 'Sph', 'Cyl', 'Axis', 'Prism', 'Add', 'PD', 'HT',
     'Material', 'Products', 'Tint', 'Coating','A', 'B', 'ED', 'DBL', 'Qty', 'Note'
 ]
 HEADER_MAPPING = {f'Col_{ALL_COLUMNS[i]}': USER_HEADERS[i] for i in range(len(ALL_COLUMNS))}
@@ -140,3 +140,4 @@ if st.button("GENERATE EXCEL / 🚀 엑셀 파일 생성 및 다운로드", type
         mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
     )
     st.success("DONE! DOWNLOAD AND CHECK YOUR EXCEL. 완료! 다운로드된 엑셀을 확인하세요.")
+
