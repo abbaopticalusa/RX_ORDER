@@ -48,7 +48,7 @@ ALL_COLUMNS = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','
 DROPDOWN_COLS = ['J','K','L','M']
 
 USER_HEADERS = [
-    'Patient Name + Location', 'Eye (R/L)', 'Sph', 'Cyl', 'Axis', 'Prism', 'Add', 'PD', 'HT',
+    'Order #', 'Eye (R/L)', 'Sph', 'Cyl', 'Axis', 'Prism', 'Add', 'PD', 'HT',
     'Material', 'Products', 'Tint', 'Coating','A', 'B', 'ED', 'DBL', 'Qty', 'Note'
 ]
 HEADER_MAPPING = {f'Col_{ALL_COLUMNS[i]}': USER_HEADERS[i] for i in range(len(ALL_COLUMNS))}
@@ -98,10 +98,6 @@ with col1:
     st.title("Abba Optical RX Order App")
     st.caption("1. Fill out each line as needed. Per eye (R and L). \n 2. When finished, generate the Excel file at the bottom and download it. \n 3. Email the Excel file to order@abbaopticalusa.com. \n\n *Use the Notes column for any special requests (e.g., Mirror Tint, Base Curve, etc.) \n *Please advise FT28 is only available in the options listed in the table.")
 
-with col2:
-    # use_column_width=True를 사용하여 열 너비에 맞춰 크기 조정
-    st.image('ft28.png', caption='FT28')
-
 opts = load_options()
 if not opts:
     st.warning("엑셀 템플릿에서 옵션을 불러올 수 없습니다.")
@@ -140,5 +136,3 @@ if st.button("GENERATE EXCEL / 🚀 엑셀 파일 생성 및 다운로드", type
         mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
     )
     st.success("DONE! DOWNLOAD AND CHECK YOUR EXCEL. 완료! 다운로드된 엑셀을 확인하세요.")
-
-
