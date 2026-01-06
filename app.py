@@ -96,7 +96,7 @@ col1, col2 = st.columns([0.7, 0.3]) # 70%는 텍스트, 30%는 이미지 공간 
 
 with col1:
     st.title("Abba Optical RX Order App")
-    st.caption("1. Fill out each line as needed. Per eye (R and L). \n 2. When finished, generate the Excel file at the bottom and download it. \n 3. Email the Excel file to order@abbaopticalusa.com. \n\n *Use the Notes column for any special requests (e.g., Mirror Tint, Base Curve, etc.) \n\n FT28 availability is below \n\n CR39 \n\n CLEAR \n\n 1.56 \n\n CLEAR \n\n BLUE STOP \n\n PHOTO (GREY, BROWN) \n\n POLY \n\n CLEAR")
+    st.caption("1. Fill out each line as needed. Per eye (R and L). \n 2. When finished, generate the Excel file at the bottom and download it. \n 3. Email the Excel file to order@abbaopticalusa.com. \n\n *Use the Notes column for any special requests (e.g., Mirror Tint, Base Curve, etc.) \n\n FT28 availability is below \n\n CR39: CLEAR \n\n 1.56: CLEAR, BLUE STOP, PHOTO (GREY, BROWN) \n\n POLY: CLEAR")
 
 opts = load_options()
 if not opts:
