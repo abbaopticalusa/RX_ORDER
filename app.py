@@ -100,10 +100,10 @@ with col1:
     "1. Fill out each line as needed. Per eye (R and L).\n"
     "2. When finished, generate the Excel file at the bottom and download it.\n"
     "3. Email the Excel file to order@abbaopticalusa.com.\n\n"
-    "\n FT28 availability is below:"
-    "\n CR39: CLEAR"
-    "\n 1.56: CLEAR, BLUE STOP, PHOTO (GREY, BROWN)"
-    "\n POLY: CLEAR\n\n"
+    "\n FT28 availability:"
+    "\n CR39-CLEAR // "
+    "\n 1.56-CLEAR, BLUE STOP, PHOTO (GREY, BROWN) // "
+    "\n POLY-CLEAR\n\n"
     "*Use the Notes column for any special requests (e.g., Mirror Tint, Base Curve, etc.)"
 )
 
